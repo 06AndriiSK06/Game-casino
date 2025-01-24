@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: black; /* Black text color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.App {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.stats {
+  margin: 20px 0;
+  font-size: 1.2rem;
+  color: black; /* Black text color */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff176; /* Yellow background color */
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+input {
+  width: 80%;
+  text-align: center;
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #ccc;
+  background: transparent;
+  color: blue; /* Blue text color */
+}
+
+.correct-number {
+  position: absolute;
+  bottom: 5px;
+  font-size: 0.8rem;
+  color: black; /* Black text color */
+}
+
+.correct {
+  background-color: #c8e6c9; /* Green background color */
+}
+
+.incorrect {
+  background-color: #ffcdd2; /* Red background color */
+}
+
+button {
+  margin: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  background-color: #0000ff; /* Blue background color */
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue background on hover */
+}
